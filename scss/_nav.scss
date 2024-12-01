@@ -1,0 +1,20 @@
+#nav_checkbox:checked + label > #menu_btn-img {
+  transform: translateX(-120%) scale(1.5);
+}
+
+#nav_checkbox:checked + label > #close_btn-img {
+  transform: translateX(-100%);
+}
+
+// nav box animations
+
+.nav_height_animation {
+  height: 25.9rem !important;
+  opacity: 1 !important;
+}
+
+// nav items animations
+
+.nav_transform_animation {
+  transform: translateY(0) !important;
+}

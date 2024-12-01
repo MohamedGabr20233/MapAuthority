@@ -1,0 +1,1057 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MapAuthority</title>
+    <link
+      href="https://uploads-ssl.webflow.com/5ed300c3387b7b2af12052a2/5f1cf949f60f94da335d93da_MA-Favicon.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <script src="https://kit.fontawesome.com/3fe726e0ad.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="pt-5 h-fit flex flex-col items-center bg-color-bg-dark">
+    <!-- nav_section -->
+    <nav class="h-fit w-full py-1 max-w-[83rem] flex items-center justify-center tab-small:flex-col">
+      <!-- box -->
+      <div class="container h-fit px-7 flex items-center justify-between relative tab-port:justify-start tab-port:gap-8 tab-small:justify-between">
+        <!-- logo box -->
+        <a href="#0" class="block w-fit h-7 fill-white text-yellow-100 tab-small:order-2 hover:brightness-75 transition-all duration-300">
+          <img class="h-full w-full object-cover tab-port:hidden" src="images/Logo-Red-Black.svg" alt="the logo" />
+          <img class="h-full w-full object-cover hidden scale-125 tab-port:inline-block" src="images/MapAuthority-Icon-White.svg" alt="the logo" />
+        </a>
+
+        <!-- list -->
+        <ul class="flex items-center space-x-9 tab-small:hidden">
+          <a href="#0" class="capitalize text-color-paragraph font-semibold hover:text-white transition-colors duration-300">Overview </a>
+          <a href="#0" class="capitalize text-color-paragraph font-semibold hover:text-white transition-colors duration-300">Blog </a>
+          <a href="#0" class="capitalize text-color-paragraph font-semibold hover:text-white transition-colors duration-300">For Retailers </a>
+          <a href="#0" class="capitalize text-color-paragraph font-semibold hover:text-white transition-colors duration-300">Support</a>
+        </ul>
+
+        <!-- sign box -->
+
+        <div class="w-fit flex items-center space-x-5 tab-port:ml-auto tab-small:ml-0 tab-small:order-3 tab-small:space-x-0">
+          <a href="#0" class="capitalize text-white font-semibold hover:text-color-paragraph transition-colors duration-300 tab-small:hidden"
+            >sign In</a
+          >
+
+          <!-- the main sign btn -->
+
+          <a
+            href="#0"
+            class="capitalize px-5 py-3 bg-color-primary text-white font-semibold rounded-full hover:brightness-75 transition-all duration-300 tab-small:hidden"
+            >Free trail</a
+          >
+          <a
+            href="#0"
+            class="capitalize px-4 py-1 bg-color-primary text-white font-semibold rounded-full hidden hover:brightness-75 transition-all duration-300 tab-small:block"
+          >
+            trail</a
+          >
+        </div>
+
+        <!-- the phone box btn -->
+        <input class="hidden" id="nav_checkbox" type="checkbox" />
+        <label
+          class="w-10 h-10 group overflow-hidden order-1 py-1 px-1 rounded-full pointer bg-color-bg-dark-light cursor-pointer hidden tab-small:flex"
+          for="nav_checkbox"
+          id="nav_phone-btn"
+        >
+          <img
+            class="w-full h-full scale-125 object-cover delay-200 duration-500"
+            src="images/nav/Menu-Icon-White.svg"
+            alt="Menu btn"
+            id="menu_btn-img"
+          />
+          <img
+            class="w-full h-full scale-150 object-cover delay-200 duration-[.4s]"
+            src="images/nav/Menu-Close-Icon-White.svg"
+            alt="close btn"
+            id="close_btn-img"
+          />
+        </label>
+      </div>
+      <!-- the phone box -->
+      <div
+        class="h-0 overflow-hidden w-full flex-col items-center opacity-0 bg-color-bg-dark relative z-20 transition-all duration-[1.5s] delay-600 hidden tab-small:flex"
+        id="nav_phone-box"
+      >
+        <ul class="w-full px-10 flex flex-col space-y-6 pt-10 mb-7">
+          <a href="#0" class="h-10 w-fit flex items-center overflow-hidden">
+            <div class="nav_phone-links flex items-center w-fit gap-7 transition-transform duration-500 delay-200 translate-y-[120%]">
+              <img class="w-6 h-6 object-cover" src="images/nav/overView.svg" alt="overview icon" />
+              <span class="-mt-1 capitalize text-xl font-bold text-color-paragraph transition-colors hover:text-white duration-500">overview</span>
+            </div>
+          </a>
+          <a href="#0" class="h-10 w-fit flex items-center overflow-hidden">
+            <div class="nav_phone-links flex items-center w-fit gap-7 transition-transform duration-500 delay-200 translate-y-[120%]">
+              <img class="w-6 h-6 object-cover" src="images/nav/shop_cart.svg" alt="shop_cart icon" />
+              <span class="-mt-1 capitalize text-xl font-bold text-color-paragraph transition-colors hover:text-white duration-500">
+                For Retailers</span
+              >
+            </div>
+          </a>
+          <a href="#0" class="h-10 w-fit flex items-center overflow-hidden">
+            <div class="nav_phone-links flex items-center w-fit gap-7 transition-transform duration-500 delay-200 translate-y-[120%]">
+              <img class="w-6 h-6 object-cover" src="images/nav/blog.svg" alt="blog icon" />
+              <span class="-mt-1 capitalize text-xl font-bold text-color-paragraph transition-colors hover:text-white duration-500"> Blog</span>
+            </div>
+          </a>
+
+          <a href="#0" class="h-10 w-fit flex items-center overflow-hidden">
+            <div class="nav_phone-links flex items-center w-fit gap-7 transition-transform duration-500 delay-200 translate-y-[120%]">
+              <img class="w-6 h-6 object-cover" src="images/nav/quitions.svg" alt="questions icon" />
+              <span class="-mt-1 capitalize text-xl font-bold text-color-paragraph transition-colors hover:text-white duration-500">Support</span>
+            </div>
+          </a>
+        </ul>
+        <!-- the btn box -->
+        <div class="w-full flex items-center justify-center py-8 border-y border-y-color-bg-dark-light">
+          <a href="#0" class="capitalize w-[90%] text-center px-5 py-3 bg-color-primary text-white font-semibold rounded-full">sign In</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="hero_section" class="mt-28 flex flex-col items-center">
+      <div class="container flex flex-col items-center px-10" id="hero_section-container">
+        <!-- the hider -->
+        <h1 class="text-center text-8xl mb-5 font-bold max-w-4xl text-white tab-small:text-6xl phone:text-[2.5rem]">Enforce your Amazon prices.</h1>
+        <!-- the section paragraph -->
+        <p class="text-section-paragraph text-center text-color-paragraph mb-8">The only tool to automatically enforce your MAP pricing.</p>
+        <!-- the hero btn -->
+        <a
+          href="#0"
+          class="capitalize cursor-pointer flex items-center gap-4 px-7 py-4 w-fit text-center text-lg font-medium bg-color-primary text-white rounded-full hover:brightness-75 transition-all duration-300"
+        >
+          30-Day Free Trial
+
+          <span> <img class="w-4" src="images/Arrow-Right-White.svg" alt="Arrow-Right-White" /></span>
+        </a>
+        <!-- the img -->
+        <div class="hero_img_box rounded-3xl w-[80%] overflow-hidden tab-small:w-[100%]">
+          <img class="h-full w-full object-cover" src="images/hero_section/5f5d306e8b598e6e0265bf0c_Hero-Dashboard.jpg" alt="hero app img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- protect section -->
+    <section class="flex flex-col items-center py-[100px] w-full">
+      <!-- the container -->
+      <div class="container max-w-[78rem] flex flex-col items-center px-6 space-y-12">
+        <!-- the section title -->
+        <h2 class="text-section-header leading-section-header max-w-6xl text-white font-bold text-center tab-small:text-6xl phone:text-[2.5rem]">
+          We protect your Amazon prices in
+          <span class="text-color-primary"> two ways</span> .
+        </h2>
+
+        <!-- the main btn -->
+        <div class="w-fit h-fit flex justify-center items-center relative cursor-pointer transition-all hover:brightness-75">
+          <a
+            href="#0"
+            id="btn_protect"
+            class="p-14 flex justify-center items-center w-[10.5rem] h-[10.5rem] border border-color-primary rounded-full tab-small:scale-75 phone:scale-50"
+          >
+            <img class="translate-x-2" src="images/icon_play.svg" alt="icon_play.svg" />
+          </a>
+          <!-- the line out animation -->
+          <div class="protect_animation_box"></div>
+        </div>
+
+        <!-- boxes container -->
+        <div class="container flex items-center justify-between bg-color-bg-dark-light rounded-xl tab-small:flex-col">
+          <!-- the first box -->
+          <div class="p-10 flex flex-col w-1/2 tab-port:p-8 tab-small:w-full">
+            <!-- the header box -->
+            <div class="w-full flex items-center justify-between font-semibold">
+              <h3 class="mb-4 text-[1.75rem] whitespace-nowrap text-white leading-10 phone:text-2xl">Price Monitoring</h3>
+              <span class="text-[2.5rem] text-white text-opacity-[.07] phone:text-xl">01</span>
+            </div>
+
+            <!-- the paragraph -->
+            <p class="text-white text-opacity-50 text-xl mb-8 phone:text-[1.125]">
+              If any seller lists one of your authortys below your MAP price, our MAP monitoring tool allows you to track the details of the violation
+              by ASIN and retailer.
+            </p>
+
+            <!-- the btn -->
+            <a
+              href="#0"
+              class="py-3 px-6 w-fit capitalize font-semibold text-white border border-white rounded-full transition-all hover:brightness-75"
+              >learn more</a
+            >
+          </div>
+
+          <!-- the line -->
+          <div
+            class="w-[1px] h-[19rem] bg-gradient-to-b from-[#ffffff00] from-10% via-[#ffffff26] via-50% to-[#ffffff00] to-90% tab-small:h-[1px] tab-small:w-full tab-small:bg-gradient-to-r tab-small:my-5"
+          ></div>
+
+          <!-- the second box -->
+          <div class="p-10 flex flex-col w-1/2 tab-port:p-8 tab-small:w-full">
+            <!-- the header box -->
+            <div class="w-full flex items-center justify-between font-semibold">
+              <h3 class="mb-4 text-[1.75rem] whitespace-nowrap text-white leading-10 phone:text-2xl">MAP Enforcement</h3>
+              <span class="text-[2.5rem] text-white text-opacity-[.07] phone:text-xl">02</span>
+            </div>
+
+            <!-- the paragraph -->
+            <p class="text-white text-opacity-50 text-xl mb-8 phone:text-[1.125]">
+              While MAP monitoring simply informs you of MAP pricing violations, our MAP enforcement tool makes it impossible for sellers to even list
+              below your MAP price.
+            </p>
+
+            <!-- the btn -->
+            <a
+              href="#0"
+              class="py-3 px-6 w-fit capitalize font-semibold text-white border border-white rounded-full transition-all hover:brightness-75"
+              >learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!--* tools section -->
+    <section class="flex flex-col items-center py-[100px] w-full">
+      <!-- the container -->
+      <div class="container flex flex-col px-6 max-w-[78rem] space-y-[3.125rem]">
+        <!-- the section title -->
+        <h2 class="text-section-header leading-section-header max-w-6xl text-white font-bold tab-small:text-6xl phone:text-[2.5rem]">
+          <span class="text-color-primary"> MAP enforcement</span> <br />
+          is a challenge for brands.
+        </h2>
+        <!-- the section paragraph -->
+
+        <p class="text-white text-section-paragraph leading-9 max-w-[58rem] phone:text-lg">
+          MAP enforcement can be a daunting task for brands on Amazon. A significant amount of time and effort is spent price monitoring, contacting
+          retailers violating your MAP pricing, and fielding calls from upset channel partners about your discounted Amazon prices. All the while, you
+          can’t escape the pressure of knowing your brand’s identity is on the line.
+        </p>
+
+        <!-- the 3 boxes container -->
+        <div class="w-full flex justify-between space-x-10 tab-port:flex-col tab-port:space-x-0 tab-port:space-y-10">
+          <!-- the first box -->
+          <div class="w-1/3 p-10 flex flex-col bg-color-bg-dark-light rounded-xl tab-port:w-full phone:p-8">
+            <!-- the title box -->
+            <div
+              class="flex flex-col justify-between tab-port:flex-row tab-port:items-center tab-port:w-fit tab-port:gap-12 phone:flex-col phone:gap-0 phone:items-start"
+            >
+              <!-- the title icon -->
+              <div class="mb-12 w-[75px] h-[75px] flex items-center justify-center bg-icon-tools rounded-xl phone:mb-8">
+                <img class="w-6" src="images/tools_section/electric.svg" alt="electric img" />
+              </div>
+
+              <!-- the text title -->
+              <h3 class="text-3xl text-white mb-8 font-semibold phone:text-[1.625rem]">Channel <span class="text-color-primary"> Conflict</span></h3>
+            </div>
+
+            <!-- the paragraph -->
+            <p class="text-xl text-white text-opacity-50 leading-8 phone:text-lg">
+              The majority of MAP pricing problems stem from listing prices on Amazon. If your Amazon price is different than other e-commerce
+              platforms, it's likely causing conflict with these channel's third-party sellers and their retail brand managers.
+            </p>
+          </div>
+
+          <!-- the second box -->
+          <div class="w-1/3 p-10 flex flex-col bg-color-bg-dark-light rounded-xl tab-port:w-full phone:p-8">
+            <!-- the title box -->
+            <div
+              class="flex flex-col justify-between tab-port:flex-row tab-port:items-center tab-port:w-fit tab-port:gap-12 phone:flex-col phone:gap-0 phone:items-start"
+            >
+              <!-- the title icon -->
+              <div class="mb-12 w-[75px] h-[75px] flex items-center justify-center bg-icon-tools rounded-xl phone:mb-8">
+                <img class="w-6" src="images/tools_section/stock_down.svg" alt="stock_down img" />
+              </div>
+
+              <!-- the text title -->
+              <h3 class="text-3xl text-white mb-8 font-semibold phone:text-[1.625rem]">Brand <span class="text-color-primary"> Erosion</span></h3>
+            </div>
+
+            <!-- the paragraph -->
+            <p class="text-xl text-white text-opacity-50 leading-8 phone:text-lg">
+              A MAP policy is only effective when it's enforced, and your brand's identity is at stake when your products are being sold below your
+              minimum advertised price. Without proper MAP enforcement, this will lead to brand erosion over time.
+            </p>
+          </div>
+
+          <!-- the third box -->
+          <div class="w-1/3 p-10 flex flex-col bg-color-bg-dark-light rounded-xl tab-port:w-full phone:p-8">
+            <!-- the title box -->
+            <div
+              class="flex flex-col justify-between tab-port:flex-row tab-port:items-center tab-port:w-fit tab-port:gap-12 phone:flex-col phone:gap-0 phone:items-start"
+            >
+              <!-- the title icon -->
+              <div class="mb-12 w-[75px] h-[75px] flex items-center justify-center bg-icon-tools rounded-xl phone:mb-8">
+                <img class="w-6" src="images/tools_section/timing.svg" alt="sand clock img" />
+              </div>
+
+              <!-- the text title -->
+              <h3 class="text-3xl text-white mb-8 font-semibold phone:text-[1.625rem]">Time <span class="text-color-primary"> Consuming</span></h3>
+            </div>
+
+            <!-- the paragraph -->
+            <p class="text-xl text-white text-opacity-50 leading-8 phone:text-lg">
+              Constantly monitoring your MAP pricing is a tedious and time intensive task, and patrolling the web and contacting retailers isn’t
+              always the most efficient use of your time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- the video section -->
+
+    <section id="video_section" class="px-5 mb-36 mt-10 w-full flex items-center justify-center relative bg-[#ff0030d9]">
+      <!-- the bg video -->
+      <video src="images/video_section/MapAuthority.mp4" class="absolute w-full h-full top-0 left-0 object-cover -z-10" autoplay="true"></video>
+      <!-- the section.container -->
+      <div class="container box-content pt-44 pb-[6.25rem] h-[27.5625rem] max-w-[75rem]">
+        <!-- the icon  -->
+        <div class="w-16 mb-12 phone:w-10 phone:mb-8">
+          <img class="w-full h-full object-cover" src="images/video_section/video_logo.svg" alt="video_logo." />
+        </div>
+
+        <!-- the section paragraph -->
+        <p
+          class="mb-10 max-w-full w-[37.5rem] leading-[3.125rem] italic text-3xl font-medium text-white text-opacity-75 phone:text-2xl phone:leading-9 phone:mb-5"
+        >
+          "Our brand has been searching for a definitive solution to MAP enforcement like this for years".
+        </p>
+
+        <!-- the name  -->
+        <p class="text-white text-section-paragraph leading-9 mb-[3.125rem] font-semibold phone:text-xl phone:leading-7">
+          Jenna Sellers Miller, President at Architect
+        </p>
+
+        <!-- the video btn -->
+        <a
+          href="#0"
+          class="capitalize cursor-pointer flex items-center gap-4 px-7 py-4 w-fit text-center text-lg font-medium bg-white bg-opacity-25 text-white rounded-full hover:bg-opacity-50 transition-all duration-300"
+        >
+          30-Day Free Trial
+
+          <span> <img class="w-4" src="images/Arrow-Right-White.svg" alt="Arrow-Right-White" /></span>
+        </a>
+      </div>
+    </section>
+    <!-- the notification section -->
+
+    <section id="notification_section" class="px-5 mb-52 mt-10 w-full flex items-center justify-center">
+      <!-- the section container -->
+      <div
+        class="container max-w-[75rem] flex justify-between space-x-12 tab-port:flex-col tab-port:space-x-0 tab-port:space-y-12 tab-port:items-center"
+      >
+        <!-- the left box -->
+        <div class="max-w-[57%] space-y-12 tab-port:max-w-full">
+          <!-- the section title -->
+          <h2 class="text-section-header leading-section-header text-white font-bold tab-small:text-6xl phone:text-[2.5rem]">
+            The current enforcement options <span class="text-color-primary"> only offer MAP monitoring</span> .
+          </h2>
+
+          <!-- the section paragraph -->
+          <p class="text-white text-section-paragraph leading-9 max-w-[58rem] phone:text-lg">
+            Amazon brand protection and MAP enforcement have been issues on Amazon since the beginning. The only current solution is to send out
+            compliance notifications which don't address the underlying problem. These MAP pricing notifications only create more time-consuming work
+            for your brand by asking you to rectify the MAP violations yourself.
+          </p>
+        </div>
+
+        <!-- the right box (notification box) -->
+        <div
+          class="px-5 pt-4 w-[36%] flex items-center flex-col bg-color-bg-dark-light rounded-2xl tab-port:w-[80%] tab-port:h-[40rem] phone:w-[90%]"
+        >
+          <!-- the section top -->
+          <div class="h-10 w-full flex items-center justify-between">
+            <!-- the left arrow icon -->
+            <div class="flex w-5 items-center justify-center">
+              <img class="w-full h-full object-cover" src="images/notfication_section/Arrow-Left-White.svg" alt="Arrow-Left-White." />
+            </div>
+
+            <!-- the text -->
+            <span class="text-white text-lg font-semibold">Competitor Notifications</span>
+
+            <!-- the ring icon -->
+            <div class="flex w-5 items-center justify-center">
+              <img class="w-full h-full object-cover" src="images/notfication_section/Notify-Bell.svg" alt="Notify-Bell.svg" />
+            </div>
+          </div>
+
+          <!-- the body   -->
+          <div class="flex h-full w-full flex-col items-center justify-end space-y-4 py-8 mt-4 relative overflow-hidden">
+            <!-- the list -->
+            <ul
+              class="list-none flex flex-col space-y-4 items-center absolute w-full h-fit top-0 left-0 bg-color-bg-dark-light"
+              id="list_notification"
+            >
+              <!-- the first item -->
+              <li class="flex items-start gap-4 rounded-2xl bg-color-bg-dark-light-2 p-4">
+                <!-- the img box -->
+                <div class="w-12 mt-[5px] rounded-lg overflow-hidden">
+                  <img src="images/notfication_section/1-.jpg" alt="Mugs" />
+                </div>
+
+                <!-- the text box -->
+                <div class="w-full">
+                  <!-- the paragraph -->
+                  <p class="mb-4 text-white text-[.95rem] leading-6">
+                    <span class="font-bold">Infinity Mugs</span>
+                    just listed this item below your MAP. Okay our "work" here is done.
+                  </p>
+
+                  <p class="text-white text-opacity-50 text-[.95rem]">Just now</p>
+                </div>
+              </li>
+
+              <!-- the second item -->
+              <li class="flex items-start gap-4 rounded-2xl bg-color-bg-dark-light-2 p-4">
+                <!-- the img box -->
+                <div class="w-12 mt-[5px] rounded-lg overflow-hidden">
+                  <img src="images/notfication_section/2-.jpg" alt="CloudRun Athletes" />
+                </div>
+
+                <!-- the text box -->
+                <div class="w-full">
+                  <!-- the paragraph -->
+                  <p class="mb-4 text-white text-[.95rem] leading-6">
+                    <span class="font-bold">CloudRun Athletes</span>
+                    just listed this item below your MAP. Good luck getting them to change their price!
+                  </p>
+
+                  <p class="text-white text-opacity-50 text-[.95rem]">20 minutes ago</p>
+                </div>
+              </li>
+
+              <!-- the third item -->
+              <li class="flex items-start gap-4 rounded-2xl bg-color-bg-dark-light-2 p-4">
+                <!-- the img box -->
+                <div class="w-12 mt-[5px] rounded-lg overflow-hidden">
+                  <img src="images/notfication_section/3-.jpg" alt="Elemeno Footwear" />
+                </div>
+
+                <!-- the text box -->
+                <div class="w-full">
+                  <!-- the paragraph -->
+                  <p class="mb-4 text-white text-[.95rem] leading-6">
+                    <span class="font-bold">Elemeno Footwear</span>
+                    just listed this item below your MAP. Contacting them on the weekend sounds like a mess lol.
+                  </p>
+
+                  <p class="text-white text-opacity-50 text-[.95rem]">3 hours ago</p>
+                </div>
+              </li>
+
+              <!-- the forth item -->
+              <li class="flex items-start gap-4 rounded-2xl bg-color-bg-dark-light-2 p-4">
+                <!-- the img box -->
+                <div class="w-12 mt-[5px] rounded-lg overflow-hidden">
+                  <img src="images/notfication_section/4-.jpg" alt="GymFeet" />
+                </div>
+
+                <!-- the text box -->
+                <div class="w-full">
+                  <!-- the paragraph -->
+                  <p class="mb-4 text-white text-[.95rem] leading-6">
+                    <span class="font-bold">GymFeet</span>
+                    just listed this item below your MAP. Now it's up to you to actually enforce the price. You're welcome for just sending a
+                    notification and doing nothing.
+                  </p>
+
+                  <p class="text-white text-opacity-50 text-[.95rem]">Yesterday at 12:09 AM</p>
+                </div>
+              </li>
+
+              <!-- the fifth item -->
+              <li class="flex items-start gap-4 rounded-2xl bg-color-bg-dark-light-2 p-4">
+                <!-- the img box -->
+                <div class="w-12 mt-[5px] rounded-lg overflow-hidden">
+                  <img src="images/notfication_section/5-.jpg" alt="Outdoor Ready" />
+                </div>
+
+                <!-- the text box -->
+                <div class="w-full">
+                  <!-- the paragraph -->
+                  <p class="mb-4 text-white text-[.95rem] leading-6">
+                    <span class="font-bold">Outdoor Ready</span>
+                    ust listed this item below your supposed MAP. Okay our work here is done. Good luck!
+                  </p>
+
+                  <p class="text-white text-opacity-50 text-[.95rem]">2 days ago</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="w-10 h-10 p-3 rounded-full bg-color-primary">
+              <img src="images/notfication_section/like.svg" alt="like svg" />
+            </div>
+            <!-- paragraph -->
+            <p class="text-sm text-white text-opacity-50">Hooray! End of notifications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product_section -->
+    <section class="px-5 mb-52 mt-10 w-full flex items-center justify-center" id="product_section">
+      <div class="container flex flex-col px-6 max-w-[78rem]">
+        <!-- the text box -->
+        <div class="mb-16 mr-[6.25rem] tab-small:mr-0">
+          <!-- the section title -->
+          <h2 class="mb-12 text-section-header leading-section-header text-white font-bold tab-small:text-6xl phone:text-[2.5rem]">
+            So, we added <span class="text-color-primary"> automatic MAP enforcement</span> too.
+          </h2>
+          <!-- the section paragraph -->
+          <p class="text-white text-section-paragraph leading-9 phone:text-lg">
+            MapAuthority make it’s physically impossible for your third-party sellers to violate your MAP policy on Amazon. If a seller attempts to
+            lower a product's price below your MAP policy, MapAuthority will automatically deny the request, and the violating price will never make
+            it to the Amazon detail page. It is the ultimate Amazon MAP enforcement tool on the market today. Many of our users call it magic. We just
+            call it proper MAP enforcement.
+          </p>
+        </div>
+
+        <!-- the animation box container -->
+        <div class="flex item-center justify-between space-x-8 tab-port:flex-col tab-port:space-x-0 tab-port:space-y-8 tab-port:items-center">
+          <!--* the left box -->
+          <div class="p-5 space-y-5 w-1/2 flex flex-col items-center bg-color-bg-dark-light rounded-2xl tab-port:w-[98%] tab-port:max-w-[40rem]">
+            <!-- the box title -->
+            <p class="text-white text-[.95rem] leading-5 w-full text-center">Sync your brand's MAP prices to your retailers.</p>
+
+            <!--  -->
+            <div class="p-[15px] w-full flex items-center rounded-2xl bg-color-bg-dark-light-2">
+              <p class="w-10 h-10 mr-[.94rem] flex items-center justify-center bg-color-primary rounded-full text-white uppercase font-medium">ac</p>
+
+              <p class="flex flex-col text-white">
+                <span class="font-semibold"> Athena and Co.</span>
+                <span class="text-white text-opacity-50"> (Retailer)</span>
+              </p>
+
+              <!-- the down arrow icon -->
+              <div class="ml-auto w-4">
+                <img class="opacity-50" src="images/product_section/curiose_down.svg" alt="curiosa_down.svg" />
+              </div>
+            </div>
+
+            <!-- the animation load -->
+            <div class="mb-[.95rem] h-6 flex gap-4 justify-center relative overflow-hidden">
+              <p class="text-white text-opacity-50">Syncing Catalog</p>
+
+              <!-- the icons box -->
+              <div class="h-14 w-5 mt-0.5 flex flex-col justify-between">
+                <img class="product_left_icon-1" src="images/product_section/Sync-White.svg" alt="Sync-White.svg" />
+                <img src="images/product_section/Check-Green.svg" alt="Check-Green.svg" />
+              </div>
+            </div>
+
+            <!-- the products list box -->
+
+            <ul class="list-none w-full flex flex-col items-center rounded-2xl overflow-hidden">
+              <div class="product_box_animation w-full flex flex-col bg-color-bg-dark-light-2 rounded-xl">
+                <!-- first product -->
+                <li class="w-full flex items-center p-[.95rem] rounded-2xl">
+                  <!-- img -->
+                  <img class="w-14 h-14 rounded-xl" src="images/product_section/red_shose.jpg" alt="red_shoes.jpg" />
+
+                  <!-- product title -->
+                  <span class="text-[.94rem] text-white leading-5 ml-5">B072MQKK8J</span>
+
+                  <!-- the price-box -->
+
+                  <p class="ml-auto text-white space-x-4 flex items-center">
+                    <span>$80. 00</span>
+                    <span class="w-4 opacity-50">
+                      <img src="images/product_section/5f3844366e439f98b7d47177_Lock-White.svg" alt="Lock-White.svg"
+                    /></span>
+                  </p>
+                </li>
+
+                <!-- second product -->
+                <li class="product_item_active-animation w-full flex items-center p-[.95rem] rounded-2xl">
+                  <!-- img -->
+                  <img class="w-14 h-14 rounded-xl" src="images/product_section/pink-2.jpg" alt="pink_Shoes.jpg" />
+
+                  <!-- product title -->
+                  <span class="text-[.94rem] text-white leading-5 ml-5">B071LF9R6G</span>
+
+                  <!-- the price-box -->
+
+                  <p class="ml-auto text-white space-x-4 flex items-center">
+                    <span>$73. 00</span>
+                    <span class="w-4 opacity-50">
+                      <img src="images/product_section/5f3844366e439f98b7d47177_Lock-White.svg" alt="Lock-White.svg"
+                    /></span>
+                  </p>
+                </li>
+                <!-- third product -->
+                <li class="w-full flex items-center p-[.95rem] rounded-2xl">
+                  <!-- img -->
+                  <img class="w-14 h-14 rounded-xl" src="images/product_section/green_shose.jpg" alt="green_shoes.jpg" />
+
+                  <!-- product title -->
+                  <span class="text-[.94rem] text-white leading-5 ml-5">B07566D3BX</span>
+
+                  <!-- the price-box -->
+
+                  <p class="ml-auto text-white space-x-4 flex items-center">
+                    <span>$85. 00</span>
+                    <span class="w-4 opacity-50">
+                      <img src="images/product_section/5f3844366e439f98b7d47177_Lock-White.svg" alt="Lock-White.svg"
+                    /></span>
+                  </p>
+                </li>
+              </div>
+            </ul>
+          </div>
+
+          <!--* the right box -->
+          <div class="w-1/2 p-5 space-y-5 flex flex-col items-center rounded-2xl bg-color-bg-dark-light tab-port:w-[98%] tab-port:max-w-[40rem]">
+            <!-- the box title -->
+            <p class="text-white text-[.95rem] leading-5 w-full text-center">MAP Authority enforces prices below your MAP like magic.</p>
+
+            <!-- the content box -->
+            <div
+              class="w-full h-full p-[.95rem] space-x-4 flex item-center rounded-2xl bg-color-bg-dark-light-2 phone:flex-col-reverse phone:space-x-0"
+            >
+              <!-- the left box imgs -->
+              <div class="w-[45%] space-y-4 phone:w-full">
+                <!-- big img -->
+                <img class="h-[82%] w-full object-cover rounded-xl" src="images/product_section/pink-2.jpg" alt="pink-2" />
+
+                <!-- small imgs box -->
+                <div class="flex justify-between items-center">
+                  <!-- small img 1 -->
+                  <img
+                    class="w-12 h-12 tab-land:w-10 tab-land:h-10 rounded-md brightness-50 phone:w-20 phone:h-20"
+                    src="images/product_section/pink-1.jpg"
+                    alt="pink-1.jpg"
+                  />
+
+                  <!-- small img 2 -->
+                  <img
+                    class="w-12 h-12 tab-land:w-10 tab-land:h-10 rounded-md phone:w-20 phone:h-20"
+                    src="images/product_section/pink-2.jpg"
+                    alt="pink-2.jpg"
+                  />
+
+                  <!-- small img 3 -->
+                  <img
+                    class="w-12 h-12 tab-land:w-10 tab-land:h-10 rounded-md brightness-50 phone:w-20 phone:h-20"
+                    src="images/product_section/pink-3.jpg"
+                    alt="pink-3.jpg"
+                  />
+
+                  <!-- small img 4 -->
+                  <img
+                    class="w-12 h-12 tab-land:w-10 tab-land:h-10 rounded-md brightness-50 phone:w-20 phone:h-20"
+                    src="images/product_section/pink-4.jpg"
+                    alt="pink4.jpg"
+                  />
+                </div>
+              </div>
+
+              <!-- the right box -->
+              <div class="w-[53%] space-y-[.95rem] flex flex-col text-white phone:w-full phone:mb-5">
+                <!-- the box title -->
+                <div>
+                  <p class="text-lg leading-6 mb-1.5 font-semibold">Athena AirLight Modern Low Top Trainer Shoes</p>
+                  <!-- the starts icon -->
+                  <img class="w-16 mb-[.95rem]" src="images/product_section/fullStars.svg" alt="fullStars" />
+                </div>
+
+                <!-- the box delivery ing -->
+                <div>
+                  <p class="text-white text-opacity-50 text-[.95rem] leading-5 mb-1.5">Free delivery Tuesday, May 15</p>
+                  <img class="w-8" src="images/product_section/quick.svg" alt="quick.svg" />
+                </div>
+
+                <!-- the box price box -->
+                <div class="flex items-center justify-between text-white">
+                  <span class="my-9 capitalize font-semibold text-lg">price:</span>
+
+                  <!-- the price box -->
+                  <div class="flex mt-1 items-center space-x-">
+                    <!-- the icons box -->
+                    <div class="overflow-hidden mt-2.5 h-[45px] p-2 w-20 relative">
+                      <ul class="product_price_icon-animation opacity-0 absolute top-0 left-0 space-y-6 w-full h-full list-none flex flex-col">
+                        <!-- first box -->
+                        <div class="flex items-center justify-center space-x-3">
+                          <img
+                            class="w-5 h-full object-cover opacity-50"
+                            src="images/product_section/MapAuthority-Icon-White.svg"
+                            alt="MapAuthority-Icon-White"
+                          />
+                          <img class="w-6" src="images/product_section/Check-Green.svg" alt="Check-Green" />
+                        </div>
+                        <!-- second box -->
+                        <div class="flex items-center justify-end mr-3">
+                          <img class="w-6 h-full object-cover" src="images/product_section/X-Red.svg" alt="X-Red" />
+                        </div>
+                      </ul>
+                    </div>
+                    <!-- the price counter box -->
+                    <div class="overflow-hidden h-10 w-12 relative">
+                      <ul
+                        class="price_counter-animation absolute top-0 left-0 list-none flex flex-col text-[1.375rem] tracking-[2px] text-white font-bold"
+                      >
+                        <p>$73</p>
+                        <p>$72</p>
+                        <p>$71</p>
+                        <p>$70</p>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- the box buy now buttons -->
+
+                <!-- btn 1 -->
+                <div class="w-full text-center py-2.5 text-white text-sm rounded-lg bg-[#edbf69]">Add to Cart</div>
+                <div class="w-full text-center py-2.5 text-white text-sm rounded-lg bg-[#ed9e69]">Buy Now</div>
+              </div>
+
+              <!-- end of the right box -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- authority_section -->
+
+    <section class="px-5 mb-52 mt-10 w-full flex items-center justify-center" id="authority_section">
+      <!-- container -->
+      <div class="container flex flex-col px-6 max-w-[78rem]">
+        <!-- the section title -->
+        <h2 class="mb-12 text-section-header leading-section-header text-white font-bold tab-small:text-6xl phone:text-[2.5rem]">
+          Why<span class="text-color-primary"> MAP Authority</span>?
+        </h2>
+
+        <!-- the section content -->
+        <div class="flex items-center justify-between flex-wrap">
+          <!-- first box -->
+          <div class="p-10 pl-0 w-1/2 tab-port:w-full">
+            <!-- the title icon -->
+            <div class="mb-6 w-[75px] h-[75px] flex items-center justify-center bg-icon-authority rounded-xl phone:mb-8">
+              <img class="w-8" src="images/authority_section/shield.svg" alt="shield.svg" />
+            </div>
+            <!-- the title text -->
+            <h3 class="mb-5 text-white text-[1.75rem] leading-[2.375rem] font-semibold">
+              We're the only tool that can actually enforce your MAP pricing on Amazon.
+            </h3>
+            <p class="text-white text-opacity-50 text-xl leading-[1.875rem]">
+              Other MAP enforcement tools take a reactive approach to MAP pricing violations. We take a proactive approach which ensures your Amazon
+              products are never listed below your minimum advertised price in the first place.
+            </p>
+          </div>
+
+          <!-- second box -->
+          <div class="p-10 pl-0 w-1/2 tab-port:w-full">
+            <!-- the title icon -->
+            <div class="mb-6 w-[75px] h-[75px] flex items-center justify-center bg-icon-authority rounded-xl phone:mb-8">
+              <img class="w-8" src="images/authority_section/clock.svg" alt="clock.svg" />
+            </div>
+            <!-- the title text -->
+            <h3 class="mb-5 text-white text-[1.75rem] leading-[2.375rem] font-semibold">
+              Our platform saves you time by requiring no extra work after setup.
+            </h3>
+            <p class="text-white text-opacity-50 text-xl leading-[1.875rem]">
+              Other MAP enforcement tools require your team to follow up with MAP policy violators, creating a never ending amount of work that still
+              won't guarantee MAP pricing compliance. With our platform, you can set it and forget it until you want to change your MAP pricing again.
+            </p>
+          </div>
+
+          <!-- third box -->
+          <div class="p-10 pl-0 w-1/2 tab-port:w-full">
+            <!-- the title icon -->
+            <div class="mb-6 w-[75px] h-[75px] flex items-center justify-center bg-icon-authority rounded-xl phone:mb-8">
+              <img class="w-8" src="images/authority_section/stock_high.svg" alt="stock_high.svg" />
+            </div>
+            <!-- the title text -->
+            <h3 class="mb-5 text-white text-[1.75rem] leading-[2.375rem] font-semibold">
+              Profit margins tend to be higher when MAP pricing is actually enforced.
+            </h3>
+            <p class="text-white text-opacity-50 text-xl leading-[1.875rem]">
+              Brands aren't the only ones benefiting from MAP Authority. Retailer margins will improve and sales will become more predictable. MAP
+              Authority creates a level playing field appreciated by everyone involved.
+            </p>
+          </div>
+
+          <!-- forth box -->
+          <div class="p-10 pl-0 w-1/2 tab-port:w-full">
+            <!-- the title icon -->
+            <div class="mb-6 w-[75px] h-[75px] flex items-center justify-center bg-icon-authority rounded-xl phone:mb-8">
+              <img class="w-8" src="images/authority_section/clock.svg" alt="clock.svg" />
+            </div>
+            <!-- the title text -->
+            <h3 class="mb-5 text-white text-[1.75rem] leading-[2.375rem] font-semibold">MAP monitoring is included with our enforcement packages.</h3>
+            <p class="text-white text-opacity-50 text-xl leading-[1.875rem]">
+              We are proud to offer both MAP monitoring and MAP enforcement, often at a fraction of the cost many are paying for monitoring-only
+              features. Why pay $250+ for monitoring when you can utilize MAP enforcement and monitoring for less money?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!--* free trail section  -->
+
+    <section class="px-5 mb-52 mt-10 w-full flex items-center justify-center" id="trail_section">
+      <!-- container -->
+      <div class="pt-24 container flex flex-col items-center px-6 max-w-[78rem] rounded-2xl bg-color-bg-dark-light">
+        <!-- the section header -->
+        <h2
+          class="mb-8 max-w-[70%] text-center text-section-header leading-section-header text-white font-bold tab-small:text-6xl phone:text-[2.5rem] tab-small:max-w-full"
+        >
+          Start your 30-day<span class="text-color-primary"> free trial</span>?
+        </h2>
+
+        <!-- the section paragraph -->
+
+        <p class="mb-12 text-center text-section-paragraph leading-9 text-white text-opacity-50 phone:text-xl">
+          What do you have to lose? Besides MAP pricing violations.
+        </p>
+
+        <!-- the main brn -->
+        <a
+          href="#0"
+          class="w-fit mb-20 gap-4 px-7 py-4 capitalize cursor-pointer flex items-center text-center text-lg font-medium bg-color-primary text-white rounded-full hover:brightness-75 transition-all duration-300"
+        >
+          30-Day Free Trial
+
+          <span> <img class="w-4" src="images/Arrow-Right-White.svg" alt="Arrow-Right-White" /></span>
+        </a>
+        <!--  -->
+
+        <!-- the section img -->
+        <img class="w-[90%] rounded-tl-2xl rounded-tr-2xl" src="images/hero_section/5f5d306e8b598e6e0265bf0c_Hero-Dashboard.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- blog section -->
+
+    <section class="px-5 mb-48 w-full flex items-center justify-center" id="blog_section">
+      <!-- container -->
+      <div class="container flex flex-col px-6 max-w-[78rem]">
+        <!-- the section text box -->
+        <div class="w-full max-w-[70%] mr-24 mb-16">
+          <!-- header -->
+          <h2 class="mb-8 text-section-header leading-section-header text-white font-bold tab-small:text-6xl phone:text-[2.5rem]">
+            Some <span class="text-color-primary"> light reading </span>from our blog.
+          </h2>
+
+          <!-- the section paragraph -->
+          <p class="text-section-paragraph text-white leading-9">
+            Our collection of relevant articles surrounding MAP enforcement and Amazon brand protection. And if you're a hardcore MAP enthusiast, you
+            can always subscribe to stay up to date on everything MAP pricing.
+          </p>
+        </div>
+
+        <!-- section content container-->
+        <div class="w-full flex items-center space-x-6 tab-land:flex-col tab-land:space-x-0 tab-land:space-y-6">
+          <!-- first card -->
+          <div
+            class="w-1/3 p-[.95rem] pb-0 bg-color-bg-dark-light rounded-xl cursor-pointer transition-transform hover:-translate-y-2 duration-300 tab-land:w-[80%] phone:w-full"
+          >
+            <!-- the img box -->
+            <img class="w-full h-60 object-cover rounded-xl" src="images/blog_section/1.jpg" alt="dog head img" />
+
+            <!-- the card body -->
+            <div class="px-5 py-9">
+              <p class="mb-[.95rem] capitalize text-white text-opacity-50 text-[.95rem] font-medium">blog post</p>
+              <!-- the title -->
+              <h3 class="mb-5 text-white text-2xl font-bold">Legislation That Could Unmask Third-Party Sellers</h3>
+
+              <!-- the date -->
+              <p class="text-xs text-white text-opacity-50">November 24, 2021</p>
+            </div>
+          </div>
+
+          <!-- second card -->
+          <div
+            class="w-1/3 p-[.95rem] pb-0 bg-color-bg-dark-light rounded-xl cursor-pointer transition-transform hover:-translate-y-2 duration-300 tab-land:w-[80%] phone:w-full"
+          >
+            <!-- the img box -->
+            <img class="w-full h-60 object-cover rounded-xl" src="images/blog_section/2.jpg" alt="court" />
+
+            <!-- the card body -->
+            <div class="px-5 py-9">
+              <p class="mb-[.95rem] capitalize text-white text-opacity-50 text-[.95rem] font-medium">blog post</p>
+              <!-- the title -->
+              <h3 class="mb-5 text-white text-2xl font-bold">Amazon Sued By DC Attorney General</h3>
+
+              <!-- the date -->
+              <p class="text-xs text-white text-opacity-50">June 14, 2021</p>
+            </div>
+          </div>
+
+          <!-- third card -->
+          <div
+            class="w-1/3 p-[.95rem] pb-0 bg-color-bg-dark-light rounded-xl cursor-pointer transition-transform hover:-translate-y-2 duration-300 tab-land:w-[80%] phone:w-full"
+          >
+            <!-- the img box -->
+            <img class="w-full h-60 object-cover rounded-xl" src="images/blog_section/3.jpeg" alt="business img" />
+
+            <!-- the card body -->
+            <div class="px-4 py-9">
+              <p class="mb-[.95rem] capitalize text-white text-opacity-50 text-[.95rem] font-medium">blog post</p>
+              <!-- the title -->
+              <h3 class="mb-5 text-white text-2xl font-bold">What Is MAP Pricing? The Ultimate MAP Pricing Guide</h3>
+
+              <!-- the date -->
+              <p class="text-xs text-white text-opacity-50">uly 23, 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- the footer -->
+
+    <footer class="px-5 pt-24 pb-12 bg-white w-full flex items-center justify-center" id="blog_section">
+      <!-- the container -->
+      <div class="container space-y-8 flex flex-col max-w-[78rem]">
+        <!-- cols container-->
+        <div class="w-full flex px-10 justify-between tab-port:flex-wrap tab-small:flex-col tab-small:items-center tab-small:space-y-5">
+          <!-- first col -->
+          <div class="flex flex-col max-w-[20%] w-56 tab-port:max-w-fit tab-small:w-full tab-small:items-center">
+            <!-- logo box -->
+            <a href="#0" class="block w-fit h-6 mb-5 hover:opacity-50 transition-all duration-300">
+              <img class="h-full w-full object-cover" src="images/footer/MapAuthority-Logo-Red-Black.svg" alt="the logo" />
+            </a>
+
+            <p class="text-footer leading-6 mb-7 font-medium text-black text-opacity-30 tab-small:text-center">
+              MAP Authority's patent pending software is the only tool on the market to truly enforce your MAP pricing on Amazon.
+            </p>
+
+            <!-- social container -->
+            <ul class="list-none space-x-3 flex justify-start items-center text-sm">
+              <!-- facebook -->
+              <i
+                class="fa-brands cursor-pointer fa-facebook-f w-10 h-10 rounded-full bg-black hover:opacity-30 transition-opacity duration-300 flex items-center justify-center text-white"
+              >
+              </i>
+              <!-- instagram -->
+              <i
+                class="fa-brands cursor-pointer fa-instagram w-10 h-10 rounded-full bg-black hover:opacity-30 transition-opacity duration-300 flex items-center justify-center text-white"
+              ></i>
+              <!-- linked in -->
+              <i
+                class="fa-brands cursor-pointer fa-linkedin-in w-10 h-10 rounded-full bg-black hover:opacity-30 transition-opacity duration-300 flex items-center justify-center text-white"
+              ></i>
+              <!-- twitter -->
+              <i
+                class="fa-brands cursor-pointer fa-twitter w-10 h-10 rounded-full bg-black hover:opacity-30 transition-opacity duration-300 flex items-center justify-center text-white"
+              ></i>
+            </ul>
+          </div>
+
+          <!-- second col -->
+          <div class="flex flex-col tab-small:w-full tab-small:items-center tab-small:text-center">
+            <!-- title -->
+            <p class="mb-[45px] text-lg font-semibold text-black tab-small:mb-5">Contact</p>
+
+            <!-- the link list -->
+            <a href="#0" class="mb-2.5 text-footer text-black font-medium text-opacity-30 transition-all duration-300 hover:text-opacity-100">
+              info@mapauthority.com
+            </a>
+
+            <a href="#0" class="mb-2.5 text-footer text-black font-medium text-opacity-30 transition-all duration-300 hover:text-opacity-100">
+              Live Chat
+            </a>
+
+            <a href="#0" class="mb-2.5 text-footer text-black font-medium text-opacity-30 transition-all duration-300 hover:text-opacity-100">
+              4210 Flagstaff Cove <br />
+              Fort Wayne, IN 46815
+            </a>
+          </div>
+
+          <!-- third col -->
+          <div class="flex flex-col tab-small:w-full tab-small:items-center tab-small:text-center">
+            <!-- title -->
+            <p class="mb-[45px] text-lg font-semibold text-black tab-small:mb-5">Navigation</p>
+
+            <!-- the link list -->
+            <a href="#0" class="mb-2.5 text-footer text-black font-medium text-opacity-30 transition-all duration-300 hover:text-opacity-100">
+              30-Day Free Trial
+            </a>
+
+            <a href="#0" class="mb-2.5 text-footer text-black font-medium text-opacity-30 transition-all duration-300 hover:text-opacity-100">
+              Overview
+            </a>
+
+            <a href="#0" class="mb-2.5 text-footer text-black font-medium text-opacity-30 transition-all duration-300 hover:text-opacity-100">
+              Blog
+            </a>
+
+            <a href="#0" class="mb-2.5 text-footer text-black font-medium text-opacity-30 transition-all duration-300 hover:text-opacity-100">
+              For Retailers
+            </a>
+
+            <a href="#0" class="mb-2.5 text-footer text-black font-medium text-opacity-30 transition-all duration-300 hover:text-opacity-100">
+              Support Hub
+            </a>
+
+            <a href="#0" class="mb-2.5 text-footer text-black font-medium text-opacity-30 transition-all duration-300 hover:text-opacity-100">
+              Contact
+            </a>
+
+            <a href="#0" class="mb-2.5 text-footer text-black font-medium text-opacity-30 transition-all duration-300 hover:text-opacity-100">
+              Sign In
+            </a>
+          </div>
+
+          <!-- forth col -->
+          <div class="flex flex-col w-[350px] mb-[15px] tab-port:w-full tab-small:items-center tab-small:w-[90%]">
+            <p class="mb-[45px] text-lg font-semibold text-black tab-small:mb-5">Subscribe to New Blog Posts</p>
+
+            <form action="#0" class="w-full flex flex-col">
+              <input
+                class="mb-5 h-[55px] p-5 pr-3 text-base rounded-2xl bg-[#f3f3f3] outline-1 outline-gray-200 tab-small:text-center"
+                type="email"
+                placeholder="Enter your email address"
+              />
+              <input
+                type="submit"
+                class="capitalize px-5 py-3 w-fit cursor-pointer bg-color-primary text-white font-semibold rounded-xl hover:opacity-50 transition-all duration-300 tab-small:w-full"
+                value="subscribe"
+              />
+            </form>
+          </div>
+        </div>
+
+        <hr class="border-gray-200 border-t-[1px]" />
+
+        <!-- copy right  -->
+        <div class="flex w-full items-center justify-between phone:flex-col phone:space-y-5">
+          <p class="text-footer font-medium">© 2024 MapAuthority | All Rights Reserved</p>
+
+          <p class="">
+            <a
+              href="#0"
+              class="pr-2 capitalize text-footer text-black font-medium text-opacity-30 transition-all duration-300 hover:text-opacity-100 cursor-pointer"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="#0"
+              class="pl-2 capitalize text-footer relative text-black font-medium text-opacity-30 transition-all duration-300 hover:text-opacity-100 cursor-pointer before:content-[''] before:h-1/2 before:w-[1px] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-black"
+            >
+              Terms of Service
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/notfication_section.js"></script>
+    <script src="tailwind/custom_tailwind.js"></script>
+    <script src="https://uploads-ssl.webflow.com/5ed300c3387b7b2af12052a2/js/webflow.602faacee.js" type="text/javascript"></script>
+  </body>
+</html>

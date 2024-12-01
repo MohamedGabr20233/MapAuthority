@@ -1,0 +1,279 @@
+#hero_section-container {
+  perspective: 2000px;
+}
+.hero_img_box {
+  transform-style: preserve-3d !important;
+
+  position: relative;
+  transform: rotateX(50deg) !important;
+}
+
+// protect section
+
+.protect_animation_box {
+  width: 10.5rem;
+  height: 10.5rem;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
+  border: 1px solid rgb(255, 0, 48);
+  border-radius: 100%;
+  transition: 0.25s all;
+  animation: protect_btn 4s 1ms infinite linear;
+
+  // tab-small
+  @media (max-width: 767px) {
+    width: 7.875rem;
+    height: 7.875rem;
+    animation: protect_btn-tab-small 4s 1ms infinite linear;
+  }
+
+  // phone
+  @media (max-width: 639px) {
+    width: 5.25rem;
+    height: 5.25rem;
+    animation: protect_btn-phone 4s 1ms infinite linear;
+  }
+}
+
+@keyframes protect_btn {
+  0% {
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+  10% {
+    border-width: 4px;
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+
+  40% {
+    border-width: 1px;
+  }
+  100% {
+    opacity: 0;
+    width: calc(10.5rem * 2);
+    height: calc(10.5rem * 2);
+  }
+}
+
+// tab-small animation
+
+@keyframes protect_btn-tab-small {
+  0% {
+    width: 7.875rem;
+    height: 7.875rem;
+  }
+  10% {
+    border-width: 4px;
+    width: 7.875rem;
+    height: 7.875rem;
+  }
+
+  40% {
+    border-width: 1px;
+  }
+  100% {
+    opacity: 0;
+    width: calc(7.875rem * 2);
+    height: calc(7.875rem * 2);
+  }
+}
+
+// phone animation
+
+@keyframes protect_btn-phone {
+  0% {
+    width: 5.25rem;
+    height: 5.25rem;
+  }
+  10% {
+    border-width: 4px;
+    width: 5.25rem;
+    height: 5.25rem;
+  }
+
+  40% {
+    border-width: 1px;
+  }
+  100% {
+    opacity: 0;
+
+    width: calc(5.25rem * 2);
+    height: calc(5.25rem * 2);
+  }
+}
+
+// the product animations
+
+.product_left_icon {
+  // the spinier
+  &-1 {
+    animation: spin 10s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+    order: 0;
+  }
+
+  76% {
+    order: 1;
+  }
+
+  100% {
+    order: 1;
+    transform: rotate(0deg);
+  }
+}
+
+// the product box animation
+.product_box_animation {
+  transform: translateY(-100%);
+  animation: show_down 10s ease-in-out infinite;
+}
+
+@keyframes show_down {
+  // delay for 1s
+  0% {
+    transform: translateY(-100%);
+  }
+
+  10% {
+    transform: translateY(-100%);
+  }
+
+  // first box
+  18% {
+    transform: translateY(-61%);
+  }
+  20% {
+    transform: translateY(-64%);
+  }
+
+  // second box
+  35% {
+    transform: translateY(-64%);
+  }
+
+  43% {
+    transform: translateY(-31%);
+  }
+  45% {
+    transform: translateY(-34%);
+  }
+
+  // third box
+  60% {
+    transform: translateY(-34%);
+  }
+  // third box
+
+  68% {
+    transform: translateY(3%);
+  }
+  70% {
+    transform: translateY(-0%);
+  }
+  // animation finished in 6s
+  95% {
+    transform: translateY(-0%);
+  }
+}
+// the product item active animation
+.product_item_active-animation {
+  animation: active_item 10s infinite;
+}
+@keyframes active_item {
+  0% {
+    background: transparent;
+  }
+  75% {
+    background: transparent;
+  }
+  80% {
+    background-color: rgb(58, 58, 58);
+  }
+
+  100% {
+    background-color: rgb(58, 58, 58);
+  }
+}
+
+//! hold first 10 seconds for all the animations
+
+// the icon price animation
+.product_price_icon-animation {
+  animation: icon_move_up_down 10s infinite;
+}
+
+@keyframes icon_move_up_down {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateY(-105%);
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(-101%);
+    opacity: 1;
+  }
+
+  60% {
+    transform: translateY(-101%);
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(15%);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.price_counter-animation {
+  animation: price_counter_move 10s infinite;
+}
+
+@keyframes price_counter_move {
+  0% {
+    transform: translateY(0%);
+  }
+
+  10% {
+    transform: translateY(-80%);
+  }
+
+  15%,
+  60% {
+    transform: translateY(-75%);
+  }
+
+  70% {
+    transform: translateY(5%);
+  }
+
+  80%,
+  100% {
+    transform: translateY(0%);
+  }
+}
